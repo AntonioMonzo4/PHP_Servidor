@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Captura - Developer sin Panza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Formulario de Captura</h1>
+    <p>Completa los datos para recibir un informe personalizado sobre tu salud.</p>
+    <form action="../formulario.php" method="POST">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" step="0.1" required>
+
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" name="altura" required>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="Mujer">Mujer</option>
+            <option value="Mujer embarazada">Mujer embarazada</option>
+            <option value="Hombre">Hombre</option>
+        </select>
+
+        <label for="actividad">Actividad física:</label>
+        <select id="actividad" name="actividad" required>
+            <option value="Movilidad casi nula">Movilidad casi nula</option>
+            <option value="Movilidad muy reducida">Movilidad muy reducida</option>
+            <option value="Normal">Normal</option>
+            <option value="Activa">Activa (1,5 a 2,5 h/sem.)</option>
+            <option value="Muy activa">Muy activa (>2,5 h/sem.)</option>
+            <option value="Deportista">Deportista</option>
+        </select>
+
+        <label for="cintura">Cintura (cm):</label>
+        <input type="number" id="cintura" name="cintura" step="0.1" required>
+
+        <label for="cadera">Cadera (cm, solo para mujeres):</label>
+        <input type="number" id="cadera" name="cadera" step="0.1">
+
+        <label for="muñeca">Muñeca (cm, solo para hombres):</label>
+        <input type="number" id="muñeca" name="muñeca" step="0.1">
+
+
+        <label for="objetivo">Mi objetivo:</label>
+        <select id="objetivo" name="objetivo" required>
+            <option value="Perder peso">Perder peso</option>
+            <option value="Mejorar mi salud">Mejorar mi salud</option>
+            <option value="Ganar peso/músculo">Ganar peso/músculo</option>
+        </select>
+
+        <label for="enfermedad">Enfermedad:</label>
+        <select id="enfermedad" name="enfermedad" required>
+            <option value="Diabetes">Diabetes</option>
+            <option value="Cardiovascular">Cardiovascular</option>
+            <option value="Ninguna de la lista">Ninguna de la lista</option>
+        </select>
+
+        <label for="alimentacion">Alimentación:</label>
+        <select id="alimentacion" name="alimentacion" required>
+            <option value="Como de todo">Como de todo</option>
+            <option value="Soy vegetariano/a">Soy vegetarian@</option>
+            <option value="No como carne o pescado">No como carne o pescado</option>
+        </select>
+
+        <label for="quiero_perder">Quiero perder:</label>
+        <select id="quiero_perder" name="quiero_perder" required>
+            <option value="+ de 5 kilos/mes">+ de 5 kilos/mes</option>
+            <option value="De 1 a 5 kilos/mes">De 1 a 5 kilos/mes</option>
+            <option value="Lo que la dieta logre">Lo que la dieta logre</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+
+
+    </form>
+
+</body>
+
+</html>
