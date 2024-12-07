@@ -25,13 +25,6 @@
     <?php
         
 
-        /**
-         * 203datosPersonales.php: Escribe un programa que 
-         * almacene en variables tu nombre, primer apellido, 
-         * segundo apellido, email, año de nacimiento y teléfono.
-         * Luego muéstralos por pantalla dentro de una tabla.
-         */
-
 
 
         $nombre = "Juan";
