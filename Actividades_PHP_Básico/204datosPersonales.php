@@ -10,10 +10,10 @@
     <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Recoger los datos del formulario
-        $nombre = htmlspecialchars($_POST['nombre']);
-        $apellido = htmlspecialchars($_POST['apellido']);
-        $edad = htmlspecialchars($_POST['edad']);
-        $email = htmlspecialchars($_POST['email']);
+        $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellido'];
+        $edad = $_POST['edad'];
+        $email = $_POST['email'];
         
         // Mostrar los datos en una tabla
         echo "<table border='1' cellpadding='10'>";
