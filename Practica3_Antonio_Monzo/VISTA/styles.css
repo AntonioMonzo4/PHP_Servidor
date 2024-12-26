@@ -1,0 +1,89 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Azul claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación en columna */
+    min-height: 100vh;
+    text-align: center; /* Centramos el texto */
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border-left: 5px solid #2196f3; /* Azul intenso */
+}
+
+/* Título */
+h1 {
+    color: #0d47a1; /* Azul oscuro */
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+/* Subtítulo */
+p {
+    color: #546e7a; /* Gris azulado */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #1e88e5; /* Azul medio */
+}
+
+/* Campos de entrada y selecciones */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bbdefb; /* Azul claro */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Colores al enfocar */
+input:focus, select:focus {
+    outline: none;
+    border-color: #1e88e5; /* Azul medio */
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+/* Botón */
+button {
+    background-color: #1e88e5; /* Azul medio */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0; /* Azul oscuro */
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.3);
+}
+
+/* Texto debajo del formulario */
+footer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #546e7a; /* Gris azulado */
+}
