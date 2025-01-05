@@ -13,10 +13,10 @@
     <p>Completa los datos para recibir un informe personalizado sobre tu salud.</p>
     <form action="../CONTROLADOR/funciones.php" method="POST">
         <label for="peso">Peso (kg):</label>
-        <input type="number" id="peso" name="peso" step="0.1" required>
+        <input type="number" id="peso" name="peso" step="0.1" required min="40" max="300">
 
         <label for="altura">Altura (cm):</label>
-        <input type="number" id="altura" name="altura" required>
+        <input type="number" id="altura" name="altura" required min="120" max="235">
 
         <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
