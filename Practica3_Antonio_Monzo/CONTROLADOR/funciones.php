@@ -19,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $alimentacion = isset($_POST['alimentacion']) ? $_POST['alimentacion'] : "No proporcionado/obtenido";
     $quiero_perder = isset($_POST['quiero_perder']) ? $_POST['quiero_perder'] : "No proporcionado/obtenido";
 
-    // Validación básica y mensajes inmediatos
     if ($peso === "No proporcionado/obtenido" || $peso < 40 || $peso > 300) {
         echo "<p>Error: Peso no proporcionado o fuera de rango (40-300 kg).</p>";
     }
