@@ -87,3 +87,83 @@ footer {
     font-size: 14px;
     color: #546e7a; /* Gris azulado */
 }
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Azul claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación en columna */
+    min-height: 100vh;
+    text-align: center; /* Centramos el texto */
+}
+
+/* Contenedor del contenido */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    border-left: 5px solid #2196f3; /* Azul intenso */
+}
+
+/* Títulos */
+h2 {
+    color: #0d47a1; /* Azul oscuro */
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Mensajes de error */
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+p.error {
+    color: #d32f2f; /* Rojo */
+    font-weight: bold;
+    background-color: #fdecea;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Resumen de datos */
+p.resumen {
+    color: #1e88e5; /* Azul medio */
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Interpretación y recomendaciones */
+p.interpretacion {
+    color: #0d47a1; /* Azul oscuro */
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+p.recomendaciones {
+    color: #2e7d32; /* Verde oscuro */
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Motivación */
+p.motivacion {
+    color: #ffa000; /* Naranja oscuro */
+    background-color: #fff3e0;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: italic;
+}
