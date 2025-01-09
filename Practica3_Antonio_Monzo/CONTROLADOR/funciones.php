@@ -109,12 +109,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         elseif ($actividad === "Muy activa") $iaf = 4;
         elseif ($actividad === "Deportista") $iaf = 5;
 
-        $bloques = floor($masaMagra * $iaf)/7;
+        $bloques = floor(($masaMagra * $iaf)/7);
 
         if ($sexo === 'Mujer' && $bloques < 11) $bloques = 11;
         elseif ($sexo === 'Hombre' && $bloques < 14) $bloques = 14;
 
-        if ($sexo === 'Mujer embarazada') $bloques += 3;
+        if ($sexo === 'Mujer embarazada' && $bloques < 14) $bloques =14;
+        elseif($sexo === 'Mujer embarazada') $bloques += 3;
 
         return min($bloques, 23);
     }

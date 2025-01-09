@@ -1,41 +1,41 @@
 /* General */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e3f2fd; /* Azul claro */
+    background-color: #ede7f6; /* Morado claro */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Alineación en columna */
+    flex-direction: column;
     min-height: 100vh;
-    text-align: center; /* Centramos el texto */
+    text-align: center;
 }
 
 /* Contenedor del formulario */
 form {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px; /* Menos redondeado */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 30px;
+    padding: 20px 25px;
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
-    border-left: 5px solid #2196f3; /* Azul intenso */
+    border-left: 5px solid #7b1fa2; /* Morado oscuro */
 }
 
 /* Título */
 h1 {
-    color: #0d47a1; /* Azul oscuro */
+    color: #4a148c; /* Morado muy oscuro */
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 /* Subtítulo */
 p {
-    color: #546e7a; /* Gris azulado */
+    color: #6a1b9a; /* Morado intermedio */
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* Etiquetas */
@@ -43,7 +43,7 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    color: #1e88e5; /* Azul medio */
+    color: #8e24aa; /* Morado medio */
 }
 
 /* Campos de entrada y selecciones */
@@ -51,7 +51,7 @@ input, select, button {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #bbdefb; /* Azul claro */
+    border: 1px solid #d1c4e9; /* Morado claro */
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 14px;
@@ -60,13 +60,13 @@ input, select, button {
 /* Colores al enfocar */
 input:focus, select:focus {
     outline: none;
-    border-color: #1e88e5; /* Azul medio */
-    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+    border-color: #8e24aa; /* Morado medio */
+    box-shadow: 0 0 5px rgba(142, 36, 170, 0.5);
 }
 
 /* Botón */
 button {
-    background-color: #1e88e5; /* Azul medio */
+    background-color: #8e24aa; /* Morado medio */
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -77,68 +77,49 @@ button {
 }
 
 button:hover {
-    background-color: #1565c0; /* Azul oscuro */
-    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.3);
+    background-color: #6a1b9a; /* Morado oscuro */
+    box-shadow: 0 4px 8px rgba(106, 27, 154, 0.3);
 }
 
 /* Texto debajo del formulario */
 footer {
     margin-top: 15px;
     font-size: 14px;
-    color: #546e7a; /* Gris azulado */
-}
-
-/* General */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e3f2fd; /* Azul claro */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Alineación en columna */
-    min-height: 100vh;
-    text-align: center; /* Centramos el texto */
+    color: #6a1b9a; /* Morado intermedio */
 }
 
 /* Contenedor del contenido */
 .container {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 30px;
+    padding: 20px 25px;
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
-    border-left: 5px solid #2196f3; /* Azul intenso */
+    border-left: 5px solid #7b1fa2; /* Morado oscuro */
 }
 
 /* Títulos */
 h2 {
-    color: #0d47a1; /* Azul oscuro */
+    color: #4a148c; /* Morado muy oscuro */
     margin-bottom: 10px;
     font-size: 24px;
 }
 
 /* Mensajes de error */
-p {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
 p.error {
-    color: #d32f2f; /* Rojo */
+    color: #b71c1c; /* Rojo intenso */
     font-weight: bold;
-    background-color: #fdecea;
+    background-color: #ffebee;
     padding: 10px;
     border-radius: 5px;
 }
 
 /* Resumen de datos */
 p.resumen {
-    color: #1e88e5; /* Azul medio */
-    background-color: #e3f2fd;
+    color: #8e24aa; /* Morado medio */
+    background-color: #ede7f6;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -146,7 +127,7 @@ p.resumen {
 
 /* Interpretación y recomendaciones */
 p.interpretacion {
-    color: #0d47a1; /* Azul oscuro */
+    color: #4a148c; /* Morado muy oscuro */
     font-size: 18px;
     margin: 15px 0;
 }
