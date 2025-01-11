@@ -1,31 +1,28 @@
 <?php
-// Verificar si el parámetro 'edad' existe en la URL
-//http://localhost:3000/Actividades_PHP_B%C3%A1sico/206anyos.php?edad=33
 
 if (isset($_GET['edad']) && is_numeric($_GET['edad'])) {
-    $edad = (int)$_GET['edad'];
+
+    $edad = $_GET['edad'];
     $anioActual = date("Y");
 
-    // Cálculos
-    $edadFutura = $edad + 10;
-    $edadPasada = $edad - 10;
-    $anioFuturo = $anioActual + 10;
-    $anioPasado = $anioActual - 10;
+    $edadDespues = $edadPresente + 10;
+    $edadAntes = $edadPresente - 10;
+    $anioDespues = $anioActual + 10;
+    $anioAntes = $anioActual - 10;
     $anioJubilacion = $anioActual + (67 - $edad);
 
-    // Mostrar resultados
-    echo "<h1>Información sobre tu edad</h1>";
-    echo "<p>Tu edad actual es: <strong>$edad años</strong></p>";
-    echo "<p>Dentro de 10 años tendrás <strong>$edadFutura años</strong>, y será el año <strong>$anioFuturo</strong>.</p>";
-    echo "<p>Hace 10 años tenías <strong>$edadPasada años</strong>, y era el año <strong>$anioPasado</strong>.</p>";
+    echo "<h1>Información</h1>";
+    echo "<p>Tu edad es: $edad años</p>";
+    echo "<p>En 10 años tendrás $edadDespues años y será el año $anioDespues.</p>";
+    echo "<p>Hace 10 años tenías $edadAntes años y era el año $anioAntes.</p>";
 
     if ($edad < 67) {
-        echo "<p>Te jubilarás en el año <strong>$anioJubilacion</strong> (suponiendo que trabajas hasta los 67 años).</p>";
+        echo "<p>Te jubilas en: $anioJubilacion (67 años pero tal y como va la cosa...).</p>";
     } else {
-        echo "<p>¡Ya deberías estar jubilado! 🎉</p>";
+        echo "<p>¡ESTÁS JUBILADO! </p>";
     }
 } else {
     echo "<h1>Error</h1>";
-    echo "<p>Por favor, proporciona tu edad en la URL usando el formato <code>?edad=tu_edad</code>.</p>";
+    echo "<p>Introduce la edad via URL.</p>";
 }
 ?>

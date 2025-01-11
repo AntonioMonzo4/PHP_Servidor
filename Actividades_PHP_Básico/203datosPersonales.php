@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos Personales</title>
+    <!--ESTILOS PARA LA TABLA REALMENTE INDIFERENTE-->
     <style>
         table {
             border-collapse: collapse;
             width: 50%;
             margin: 20px auto;
-            font-family: Arial, sans-serif;
         }
         th, td {
-            border: 1px solid #ddd;
-            text-align: left;
+            border: 4px solid #ddd;
+            text-align: center;
             padding: 8px;
+            background-color:rgb(87, 175, 94);
+
         }
-        th {
-            background-color: #f4f4f4;
-        }
+        
     </style>
 </head>
 <body>
@@ -27,19 +27,16 @@
 
 
 
-        $nombre = "Juan";
-        $primerApellido = "Pérez";
-        $segundoApellido = "García";
-        $email = "juan.perez@example.com";
-        $anioNacimiento = 1990;
-        $telefono = "+34 123 456 789";
+        $nombre = "Antonio";
+        $primerApellido = "Monzó";
+        $segundoApellido = "Ansuátegui";
+        $email = "web.antoniom@gmail.com";
+        $anioNacimiento = 2000;
+        $telefono = "626 08 76 20";
 
         
         echo "<table>
-                <tr>
-                    <th>Campo</th>
-                    <th>Valor</th>
-                </tr>
+                
                 <tr>
                     <td>Nombre</td>
                     <td>$nombre</td>

@@ -1,32 +1,30 @@
 <?php
 
-$a=4;
-$b=7;
-$c=10;
+$a = 42;
+$b = 7;
+$c = 10;
 
-if ($a == 0) {
-    if ($b == 0) {
-        echo $c == 0 ? "La ecuación tiene infinitas soluciones.\n" : "La ecuación no tiene solución.\n";
+if ($a == 0 && $b == 0) {
+    if ($c == 0) {
+        echo "Infinitas soluciones.";
     } else {
-        $x = -$c / $b;
-        echo "La ecuación es lineal. Solución: x = $x\n";
+        echo "No tiene solución.";
     }
+} elseif ($a == 0) {
+    $x = -$c / $b;
+    echo "Solución lineal: x = $x";
 } else {
-    
-    $num = pow($b, 2) - 4 * $a * $c;
+    $nums = $b * $b - 4 * $a * $c; 
 
-    if ($num > 0) {
-        
-        $x1 = (-$b + sqrt($num)) / (2 * $a);
-        $x2 = (-$b - sqrt($num)) / (2 * $a);
-        echo "La ecuación tiene dos soluciones reales: x1 = $x1 y x2 = $x2\n";
-    } elseif ($num == 0) {
-        
+    if ($nums > 0) {
+        $x1 = (-$b + sqrt($nums)) / (2 * $a);
+        $x2 = (-$b - sqrt($nums)) / (2 * $a);
+        echo "Dos soluciones reales: x1 = $x1, x2 = $x2";
+    } elseif ($nums == 0) {
         $x = -$b / (2 * $a);
-        echo "La ecuación tiene una solución única: x = $x\n";
+        echo "Solución: x = $x";
     } else {
-        
-        echo "La ecuación no tiene soluciones reales.\n";
+        echo "No tiene soluciones con números reales.(i)";
     }
 }
 ?>
