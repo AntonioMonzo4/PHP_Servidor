@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Números Pares Rango</title>
+    <title>Números </title>
 </head>
 <body>
     <h1>Números Pares en un Rango</h1>
@@ -19,8 +19,8 @@
 
     <?php
     if (isset($_GET['inicio']) && isset($_GET['fin'])) {
-        $inicio = (int)$_GET['inicio'];
-        $fin = (int)$_GET['fin'];
+        $inicio = $_GET['inicio'];
+        $fin = $_GET['fin'];
 
         if ($inicio > $fin) {
             echo "<p>El valor inicial debe ser menor o igual al valor final.</p>";
