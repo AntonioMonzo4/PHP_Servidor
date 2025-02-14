@@ -15,3 +15,6 @@
  * $cantidad = func_num_args(); → Obtiene la cantidad de parámetros recibidos
  * $valor = func_get_arg(numArgumento); → Obtiene el parámetro que ocupa la posición numArgumento.
  */
+
+
+ 
