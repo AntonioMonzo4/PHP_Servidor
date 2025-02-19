@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Captura - Developer sin Panza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Formulario de Captura</h1>
+    <p>Completa los datos para recibir un informe personalizado sobre tu salud.</p>
+    <form action="../MODELO/procesar.php" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" step="0.1" required min="40" max="300">
+
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" name="altura" required min="120" max="235">
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="Mujer">Mujer</option>
+            <option value="Mujer embarazada">Mujer embarazada</option>
+            <option value="Hombre">Hombre</option>
+        </select>
+
+        <label for="actividad">Actividad física:</label>
+        <select id="actividad" name="actividad" required>
+            <option value="Movilidad casi nula">Movilidad casi nula</option>
+            <option value="Movilidad muy reducida">Movilidad muy reducida</option>
+            <option value="Normal">Normal</option>
+            <option value="Activa">Activa (1,5 a 2,5 h/sem.)</option>
+            <option value="Muy activa">Muy activa (>2,5 h/sem.)</option>
+            <option value="Deportista">Deportista</option>
+        </select>
+
+        <label for="objetivo">Mi objetivo:</label>
+        <select id="objetivo" name="objetivo" required>
+            <option value="Perder peso">Perder peso</option>
+            <option value="Mejorar mi salud">Mejorar mi salud</option>
+            <option value="Ganar peso/músculo">Ganar peso/músculo</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Botón para ver informes -->
+    <button onclick="window.location.href='resultados.php'">Ver Informes</button>
+    <button onclick="window.location.href='index.php' ">Volver</button>';
+
+</body>
+</html>
