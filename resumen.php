@@ -347,12 +347,24 @@ echo Utilidad::saludar("Carlos");
 ?>
 //INTROSPECCIÓN 
 
-instanceof: permite comprobar si un objeto es de una determinada clase
+instanceof : permite comprobar si un objeto es de una determinada clase
 get_class: devuelve el nombre de la clase
 get_declared_class: devuelve un array con los nombres de las clases definidas
 class_alias: crea un alias
 class_exists / method_exists / property_exists: true si la clase / método / propiedad está definida
 get_class_methods / get_class_vars / get_object_vars: Devuelve un array con los nombres de los métodos / propiedades de una clase / propiedades de un objeto que son accesibles desde dónde se hace la llamada.
+
+
+
+if($deportivo instanceof Coche){
+    echo "Si lo es";
+
+}
+
+if( method_exists($cochecito,'acelerar') && property_exists($cochecito,'color')){
+
+    echo get_class($cochecito);
+}
 
 /**
  * Al asignar dos objetos no se copian, se crea una nueva referencia. Si queremos una copia, hay que clonarlo mediante el método clone(object) : object
@@ -723,3 +735,6 @@ Sintaxis:
 mysqli_real_escape_string(mysqli $connection, string $string):
 string */
 
+
+
+//SQL 
